@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweepy — Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="" width="36" height="36"> Sweepy</a>
+  <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html" class="active">Support</a></nav>
+</header>
+
+<main>
+<h1>Support</h1>
+<p class="muted">Sweepy: Photo &amp; Storage Cleaner for iPhone</p>
+
+<div class="box">
+  <h2 class="box-title">Contact us</h2>
+  <p>Write to <a href="mailto:SUPPORT_EMAIL?subject=Sweepy%20support">SUPPORT_EMAIL</a>. We reply within two business days. To help us help you, mention your iPhone model, iOS version, the Sweepy version (Settings › About Us) and, if something went wrong, what you tapped just before. Feature ideas are welcome too — there is a "Suggest a Feature" button in Extras.</p>
+</div>
+
+<h2>Getting started</h2>
+<div class="grid">
+  <div class="card"><h3>1. Allow access</h3><p>On first launch allow Full Access to Photos. Sweepy scans on your iPhone; nothing is uploaded.</p></div>
+  <div class="card"><h3>2. Review a category</h3><p>Open Similars, Duplicates, Screenshots or any other card. Tap a photo to select it, long-press to peek.</p></div>
+  <div class="card"><h3>3. Fill the Basket</h3><p>"Move to Basket" sets photos aside. Nothing is deleted yet; the Basket badge shows what is waiting.</p></div>
+  <div class="card"><h3>4. Delete when sure</h3><p>In the Basket, return anything you want to keep, then tap Delete. iOS asks once more.</p></div>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Safety and privacy</h3>
+<details><summary>Are my photos uploaded anywhere?</summary><p>No. Every scan and all face and blur analysis run on your iPhone using Apple's frameworks. Sweepy has no account and no servers that receive your photos, contacts or emails. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
+<details><summary>What happens when I delete something?</summary><p>Nothing is deleted at once. Items go to the Basket first, where you can check them again. When you confirm, iOS shows its own confirmation and moves the photos to Photos › Recently Deleted, where they stay for 30 days. You can restore them from there.</p></details>
+<details><summary>I deleted a photo by mistake. How do I get it back?</summary><p>Open the Photos app › Albums › Recently Deleted, select the photo and tap Recover. This works for 30 days after deletion.</p></details>
+<details><summary>Why does Sweepy need Full Access to Photos?</summary><p>Limited access shows only the photos you pick, so duplicates elsewhere in your library would be missed. Sweepy reads the library only to find clutter; it never sends photos anywhere.</p></details>
+
+<h3>Cleaning</h3>
+<details><summary>Which photo is marked Keep, and why?</summary><p>In every group one photo is marked Keep and is never suggested for deletion: the one where nobody is blinking, with the best-captured faces, then the sharpest and largest. You can select a different one at any time.</p></details>
+<details><summary>What does Smart Cleaning do?</summary><p>It collects the extra copies from every group (duplicates, similars, similar videos and screenshots, blurred shots) and sends them to the Basket for review. The photo marked Keep in each group always stays. You still confirm before anything is deleted.</p></details>
+<details><summary>Why are some photos missing from results?</summary><p>Photos stored only in iCloud are checked when Settings › Check iCloud Photos is on; iOS downloads a small preview of each for analysis. Photos in the Keep List are skipped. Very large libraries are analysed in the background; the banner on Home shows progress.</p></details>
+<details><summary>What is in "Other"?</summary><p>Photos that were not taken with this iPhone's camera and did not come from a messenger: AirDrop, downloads, other devices, exports from editing apps. They are not clutter by definition; the category simply lets you review them in one place.</p></details>
+<details><summary>How does Swipe work?</summary><p>Open a month or the Random deck and go through photos one at a time: swipe left (or tap Delete) to send a photo to the Basket, swipe right (or tap Keep) to keep it. Undo takes the last decision back.</p></details>
+
+<h3>Contacts</h3>
+<details><summary>Is merging contacts safe?</summary><p>Yes. Before any merge or deletion Sweepy saves a safety copy inside the app. Contacts › Restore lists the copies; Undo appears right after a merge. The review screen shows the merged result before you confirm.</p></details>
+<details><summary>Why does Sweepy see only some of my contacts?</summary><p>On iOS 18 and later you may have granted limited access. Tap "Add Contacts" in the banner or allow all contacts in iOS Settings › Privacy &amp; Security › Contacts.</p></details>
+
+<h3>Extras</h3>
+<details><summary>I forgot my Secret Library PIN.</summary><p>The PIN is stored only on your device and cannot be recovered. Deleting and reinstalling the app removes the Secret Library and its PIN; export anything important to Photos before you do.</p></details>
+<details><summary>How does the charging animation turn on?</summary><p>Through a Shortcuts automation: Shortcuts › Automation › Charger › Is Connected › Open URL <code>sweepy://charging</code>. The Charging Animation screen in Extras walks you through it. It does not run automatically without that automation.</p></details>
+<details><summary>Does Video Compress reduce quality?</summary><p>Slightly: videos are re-encoded in HEVC at the quality you choose. The original is replaced only after the compressed copy has been saved successfully. Keep Both leaves the original in place.</p></details>
+<details><summary>Is the Health Score accurate?</summary><p>It is an estimate built from storage, memory, thermal state and CPU readings on your device. Use it as a guide, not a diagnosis; Re-Analyze refreshes it.</p></details>
+
+<h3>Account and data</h3>
+<details><summary>How do I delete my data?</summary><p>Delete the app. Everything Sweepy stored — scan cache, Basket, Keep List, settings, contact safety copies and the Secret Library — is removed with it. Your photos and contacts in Apple's apps are untouched.</p></details>
+<details><summary>Does Sweepy collect any data?</summary><p>Your photos, contacts and emails never leave your device. The app may send anonymous usage statistics (which screens and features are used, how many items were cleaned) to our analytics provider, Amplitude, so we can see what to improve. You can switch this off in Settings › Share Usage Statistics. Details are in the <a href="privacy.html#s4a">Privacy Policy</a>.</p></details>
+<details><summary>Is Sweepy free?</summary><p>Yes, the current version is free with no in-app purchases. We plan to add an optional Sweepy Pro subscription later; the features that are free today will stay free.</p></details>
+
+<h2>Legal</h2>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+</main>
+
+<footer><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · © 2026 DEVELOPER_NAME</footer>
+</body>
+</html>

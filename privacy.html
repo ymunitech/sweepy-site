@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweepy — Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="icon.png" alt="" width="36" height="36"> Sweepy</a>
+  <nav><a href="privacy.html" class="active">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+
+<main>
+<h1>Privacy Policy</h1>
+<p class="muted">Sweepy: Photo &amp; Storage Cleaner for iPhone · Last updated: November 2, 2026</p>
+
+<div class="box">
+  <h2 class="box-title">The short version</h2>
+  <p>Sweepy is a storage cleaner for iPhone. It finds duplicate and similar photos, screenshots, blurry shots, Live Photos and large videos, helps you tidy your contacts, and shows a health score for your device. <strong>Everything Sweepy does with your content happens on your iPhone.</strong> Sweepy has no account, no servers that receive your photos, contacts or messages, no advertising SDKs, and it does not sell personal data. The only things that may leave your phone are anonymous usage statistics (which screens and features are used, how many items were cleaned) sent to our analytics provider, Amplitude, and whatever you choose to send yourself (for example, a photo you share or an email to support).</p>
+  <p>Questions: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>.</p>
+</div>
+
+<h2>Contents</h2>
+<ol class="toc">
+  <li><a href="#s1">Who is responsible for your data</a></li>
+  <li><a href="#s2">What Sweepy accesses on your device</a></li>
+  <li><a href="#s3">What is stored, and where</a></li>
+  <li><a href="#s4">What leaves your device</a></li>
+  <li><a href="#s4a">Usage analytics</a></li>
+  <li><a href="#s4b">Purchases and subscriptions</a></li>
+  <li><a href="#s5">Purposes and legal bases</a></li>
+  <li><a href="#s6">Third parties</a></li>
+  <li><a href="#s7">Your rights and choices</a></li>
+  <li><a href="#s8">Retention and deletion</a></li>
+  <li><a href="#s9">Security</a></li>
+  <li><a href="#s10">Children</a></li>
+  <li><a href="#s11">International users</a></li>
+  <li><a href="#s12">United States state privacy notice</a></li>
+  <li><a href="#s13">Changes to this policy</a></li>
+  <li><a href="#s14">Contact</a></li>
+</ol>
+
+<h2 id="s1">1. Who is responsible for your data</h2>
+<p>Sweepy (the "App") is published by DEVELOPER_NAME ("we", "us"). Where data protection law applies to anything described in this policy, we are the controller. Apple distributes the App through the App Store and processes your Apple ID, purchases and App Store activity under <a href="https://www.apple.com/legal/privacy/">Apple's own privacy policy</a>; we do not receive your name, Apple ID or payment details from Apple.</p>
+<p>This policy covers the App, its widgets, and this website. Capitalised terms have the meaning given in the <a href="terms.html">Terms of Use</a>.</p>
+
+<h2 id="s2">2. What Sweepy accesses on your device</h2>
+<p>Sweepy only works with data you grant it access to through iOS permissions. Each permission is optional; refusing it simply switches the related feature off.</p>
+
+<h3>2.1 Photo library</h3>
+<p>With Photos access, Sweepy reads your library to find what can be cleaned. It reads technical metadata (file name, type, size, dimensions, duration, creation date, Live Photo and burst flags, local identifiers) and analyses image content <strong>on the device</strong> using Apple's Vision and Core Image frameworks: visual similarity, duplicates, sharpness (blur), and, for photos that belong to a group, the number of faces, whether eyes are closed, and Apple's face-capture-quality score. This analysis is used only to group photos and to mark the one to keep. Sweepy does not identify people, does not create face templates that could recognise anyone, and never uploads photos, thumbnails or analysis results anywhere.</p>
+<p>Photos stored only in iCloud are included when the "Check iCloud Photos" setting is on. In that case iOS downloads a small preview of each such photo to your device for analysis; this traffic goes between your iPhone and Apple's iCloud, not to us.</p>
+<p>Deleting, compressing or converting items always requires your confirmation. Deleted photos and videos go to the Recently Deleted album in Apple Photos, where iOS keeps them for 30 days.</p>
+
+<h3>2.2 Contacts</h3>
+<p>With Contacts access, Sweepy reads names, phone numbers, email addresses, organisations and contact photos to find duplicates, similar names, entries without a name and entries without a number. Merging or deleting contacts happens only when you confirm it. Before any change, Sweepy saves a safety copy of the affected contacts inside the App on your device so you can restore them. Contact notes are read only if Apple has granted the App the Contacts Notes entitlement.</p>
+
+<h3>2.3 Device readings</h3>
+<p>For the Phone Health screen, Sweepy reads free and used storage, memory in use, thermal state, CPU load and battery level through public iOS APIs. A short history of free space is kept on the device to forecast when storage may run out. None of this is transmitted.</p>
+
+<h3>2.4 Notifications</h3>
+<p>If you allow notifications, Sweepy schedules local reminders (for example, when storage is almost full). These are generated on your device; no push service or notification token is used.</p>
+
+<h3>2.5 Email (Email Cleaner, when available)</h3>
+<p>Some versions of the App include an optional Email Cleaner for Gmail. If you connect a Google account, Sweepy talks to the Gmail API <strong>directly from your phone</strong>, with the permissions you grant on Google's consent screen. It reads message headers and sizes (sender, subject, date, labels), never message bodies or attachments, and moves messages you choose to Gmail's Trash. Your Google access tokens are stored in the iOS Keychain on your device; you can disconnect at any time in the App or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Sweepy's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2 id="s3">3. What is stored, and where</h2>
+<p>Everything Sweepy keeps lives inside the App's own storage on your iPhone (and in your encrypted iCloud or iTunes device backup, if you make one):</p>
+<ul>
+  <li>scan results and the analysis cache described above;</li>
+  <li>your Basket, Keep List, Swipe decisions and dismissed contact groups;</li>
+  <li>contact safety copies (in the App's Application Support folder, protected by iOS file protection);</li>
+  <li>the Secret Library, if you use it: the photos and videos you move there are stored inside the App, and the PIN you choose is stored as a salted hash in the iOS Keychain. We cannot read or reset it;</li>
+  <li>settings, the storage history used for forecasts, and summary numbers shared with the Home and Lock Screen widgets through an App Group on the device;</li>
+  <li>for Email Cleaner: your Google tokens (Keychain) and a local list of senders, subjects, dates and sizes;</li>
+  <li>the random installation identifier and your analytics choice (section 4a), and, once Sweepy Pro exists, the subscription status received from Apple.</li>
+</ul>
+<p>Deleting the App deletes all of it.</p>
+
+<h2 id="s4">4. What leaves your device</h2>
+<p>Your photos, videos, contacts and emails never leave your device through Sweepy. Apart from the anonymous usage statistics described in section 4a, data leaves your phone only when you choose to send it yourself:</p>
+<ul>
+  <li><strong>Sharing</strong> a photo, video or contacts backup goes through the iOS share sheet to the app or person you pick.</li>
+  <li><strong>Emailing support</strong> or <strong>suggesting a feature</strong> opens your mail app with a message you can edit before sending. We then receive what you send: your email address and the message. We use it only to reply and to improve the App.</li>
+  <li><strong>Rating the App</strong> uses Apple's in-app review prompt; the review goes to Apple.</li>
+  <li><strong>Links</strong> to this website, Apple or Google open in your browser.</li>
+  <li><strong>Email Cleaner</strong> talks to Google as described in section 2.5.</li>
+</ul>
+<p>Sweepy contains no advertising or attribution SDKs and makes no network requests of its own apart from those listed here and in section 4a.</p>
+
+<h2 id="s4a">4a. Usage analytics</h2>
+<p>To understand which features are used and where the App fails, Sweepy uses <strong>Amplitude</strong> (Amplitude, Inc., USA), a product-analytics service. Analytics may be switched on in a given version of the App; when it is, the App sends Amplitude the following:</p>
+<ul>
+  <li><strong>Product events</strong> — which screens are opened, which features are used, how many items were moved to the Basket, deleted, compressed or merged, and which permissions were granted. Events carry counts and categories only.</li>
+  <li><strong>Technical context</strong> — App version, iOS version, device model, language, country derived from the IP address, and an installation identifier generated by the App (and, where available, Apple's vendor identifier, IDFV). The IP address is used by Amplitude to derive an approximate location and is not stored by us.</li>
+</ul>
+<p>Analytics events <strong>never</strong> include photos, thumbnails, file names, contact names or numbers, email senders or subjects, the contents of the Secret Library, or anything else from Your Content. The installation identifier is random and is not tied to your name, Apple ID or email; we cannot use it to identify you. We do not use Amplitude for advertising, and we do not use Apple's advertising identifier (IDFA) or request App Tracking Transparency permission.</p>
+<p>You can turn analytics off at any time in the App under Settings › Share Usage Statistics; the switch applies immediately. Amplitude processes this data on our behalf under a data processing agreement and Amplitude's own security program; events are stored on Amplitude's servers in the United States (see section 11) and are deleted after 24 months.</p>
+
+<h2 id="s4b">4b. Purchases and subscriptions</h2>
+<p>Sweepy is currently free. We intend to offer an auto-renewing subscription ("Sweepy Pro") in a future version. When that happens, purchases will be processed by Apple through the App Store: Apple handles your payment details and we never see them. The App will receive from Apple a receipt and a transaction identifier confirming that a subscription is active, which it stores on your device and may send to Amplitude as a yes/no "subscriber" property and a product name, so that we can see which plans are popular. Subscription terms, prices, renewal and cancellation will be described in the App and in the <a href="terms.html#t10">Terms of Use</a> before any paid feature goes live.</p>
+
+<h2 id="s5">5. Purposes and legal bases</h2>
+<p>We process data on your device to provide the features you use (finding and removing clutter, cleaning contacts, compressing media, showing device health). Where the GDPR or UK GDPR applies, the legal basis is the performance of our contract with you (the Terms of Use) and, for optional permissions, your consent, which you can withdraw at any time in iOS Settings.</p>
+<p>Usage analytics (section 4a) are processed on the basis of our legitimate interest in understanding how the App is used and in finding and fixing problems; where local law requires consent for analytics, we ask for it in the App before any event is sent, and you can withdraw it with the Settings switch. Purchase confirmations (section 4b) are processed to perform the contract with you. Support messages you send are processed on the basis of our legitimate interest in answering you and maintaining the App.</p>
+<p>Photos, contacts and emails may incidentally contain special categories of data (for example, a photo of a medical document). Sweepy does not look for or interpret such content; it only compares images and reads contact fields to find duplicates.</p>
+
+<h2 id="s6">6. Third parties</h2>
+<ul>
+  <li><strong>Apple</strong> — App Store distribution, iOS frameworks (Photos, Contacts, Vision), iCloud Photos downloads, Recently Deleted, in-app review and device backups. Apple's processing is governed by Apple's privacy policy.</li>
+  <li><strong>Amplitude, Inc.</strong> (USA) — product analytics, as described in section 4a; acts as our processor and may not use the data for its own purposes.</li>
+  <li><strong>Google</strong> — only if you connect Gmail in Email Cleaner, as described in section 2.5.</li>
+  <li><strong>Your email provider</strong> — when you email us from the App.</li>
+</ul>
+<p>We do not use any other service provider, and we do not sell, rent or "share" (in the sense of US state privacy laws) personal data with anyone, including for advertising.</p>
+
+<h2 id="s7">7. Your rights and choices</h2>
+<p>Because your data stays on your device, you are in direct control of it:</p>
+<ul>
+  <li><strong>Access and portability</strong> — your photos, contacts and emails remain in Apple Photos, Contacts and Gmail. Contacts can be exported as a .vcf file from the App.</li>
+  <li><strong>Correction and deletion</strong> — edit or delete items in the App or in the system apps; delete the App to remove everything it stored; revoke permissions in iOS Settings › Privacy &amp; Security.</li>
+  <li><strong>Withdrawing consent</strong> — switch a permission off in iOS Settings; the related feature stops.</li>
+  <li><strong>Analytics</strong> — turn off Settings › Share Usage Statistics in the App. To have the events already sent under your installation identifier deleted, email us the identifier shown next to the switch.</li>
+  <li><strong>Support messages</strong> — ask us at any time to delete the messages you sent us.</li>
+</ul>
+<p>If you are in the EEA, the UK or Switzerland you also have the rights to restrict or object to processing and to lodge a complaint with your supervisory authority. To exercise any right concerning data we hold (analytics events or support correspondence), email <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>. We may ask you to confirm that the request came from the address in question.</p>
+
+<h2 id="s8">8. Retention and deletion</h2>
+<ul>
+  <li>On-device data is kept until you remove it in the App or delete the App.</li>
+  <li>The analysis cache is refreshed as your library changes and is removed with the App.</li>
+  <li>Contact safety copies: the App keeps the 30 most recent copies and removes older ones automatically.</li>
+  <li>Photos and videos you delete stay in Apple Photos › Recently Deleted for 30 days; Gmail messages you trash follow Google's Trash retention.</li>
+  <li>Analytics events are kept by Amplitude for 24 months and then deleted; aggregated statistics that no longer identify an installation may be kept longer.</li>
+  <li>Support correspondence is kept for up to 24 months after the last message, unless you ask us to delete it sooner or we need it to resolve a dispute.</li>
+</ul>
+
+<h2 id="s9">9. Security</h2>
+<p>Sweepy relies on iOS protections: data in the App's container is encrypted at rest by iOS, contact safety copies use complete file protection, and the Secret Library PIN and Google tokens are kept in the Keychain. No system is perfectly secure; keep your device passcode on and your iOS up to date. If you believe the App has a security problem, please tell us at <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>.</p>
+
+<h2 id="s10">10. Children</h2>
+<p>Sweepy is a utility for managing your own device and is not directed at children. We do not knowingly collect personal data from anyone under 13 (or under 16 where that is the age of consent), and since the App collects none, there is nothing to collect. If you believe a child has sent us personal data by email, contact us and we will delete it.</p>
+
+<h2 id="s11">11. International users</h2>
+<p>Your photos, contacts and device data do not leave your device, so there are no international transfers of that data by us. Analytics events are processed by Amplitude in the United States; for users in the EEA, the UK and Switzerland this transfer relies on the EU Standard Contractual Clauses (and the UK Addendum) in our agreement with Amplitude and, where applicable, the EU–US Data Privacy Framework. Support emails are received where we operate (GOVERNING_LAW_COUNTRY) and may be stored by our email provider in other countries under that provider's safeguards.</p>
+
+<h2 id="s12">12. United States state privacy notice</h2>
+<p>For residents of California, Colorado, Connecticut, Virginia, Utah and other states with privacy laws: in the preceding 12 months the App may have collected the following categories of personal information — identifiers (a random installation identifier and IDFV), internet or network activity (usage events and technical context described in section 4a), approximate geolocation derived from the IP address, and commercial information (whether a subscription is active). This information is disclosed only to Amplitude as our service provider for the business purpose of analytics. We do not sell personal information, do not share it for cross-context behavioral advertising, do not profile you in a way that produces legal or similarly significant effects, and offer no financial incentives in exchange for data. The content the App accesses on your device (photos and videos, contacts, device readings, and, with Gmail connected, email metadata) is processed locally to provide the service you requested and is not transmitted to us. You may exercise the rights of access, deletion, correction and portability as described in section 7, and you may appeal a decision by replying to our email with "Privacy appeal" in the subject. We do not respond to "Do Not Track" signals because we do no tracking.</p>
+
+<h2 id="s13">13. Changes to this policy</h2>
+<p>If we change this policy we will post the new version here with a new "Last updated" date and, for material changes, show a notice in the App. Continued use after the change means you accept the updated policy.</p>
+
+<h2 id="s14">14. Contact</h2>
+<p>DEVELOPER_NAME<br>Email: <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a><br>Support page: <a href="support.html">support.html</a></p>
+</main>
+
+<footer><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · © 2026 DEVELOPER_NAME</footer>
+</body>
+</html>
